@@ -9,7 +9,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar-track {
@@ -24,7 +24,7 @@ html {
 	background-color: var(--yellow);
 }
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
@@ -88,17 +88,23 @@ main {
 	background-color: white;
 	min-height: 80vh;
 	width: 100%;
-	padding: 40px 0 0;
+	padding: 0 0;
 	margin-bottom: 100px;
 }
 .intro {
 	margin: 0 auto;
-	max-width: 700px;
-	padding: 20px;
+	max-width: 100%;
+	padding: 50px 20px;
+	background-color: var(--whitemaincolor);
+}
+.intro h1,
+.intro p {
+	max-width: 600px;
+	margin: 0 auto;
 }
 .intro h1 {
-    margin-bottom: 30px;
-    line-height: 1.5;
+	margin-bottom: 30px;
+	line-height: 1.5;
 }
 .intro h1 span {
 	color: var(--midmaincolor);
@@ -109,26 +115,25 @@ main {
 	font-size: 18px;
 }
 .intro p a {
-    display: inline-block;
+	display: inline-block;
 	padding: 5px;
 	color: var(--maincolor);
 	border-radius: 5px;
-    background-color: var(--yellow);
-    margin: 5px 0;
+	background-color: var(--yellow);
+	margin: 5px 0;
 }
 .designs {
 	width: 100%;
-	border-top: 1px solid var(--midmaincolor);
-	margin-top: 40px;
+	margin-top: 10px;
 	padding-top: 40px;
 }
 .designs h2 {
 	text-shadow: 3px 3px 1px var(--whitemaincolor);
 	position: relative;
 	width: max-content;
-    margin: 0 auto;
-    background-color: var(--yellow);
-    padding: 20px;
+	margin: 0 auto;
+	background-color: var(--yellow);
+	padding: 20px;
 }
 .designs-container {
 	width: 90%;
@@ -139,8 +144,8 @@ main {
 }
 .designs-container .design {
 	max-width: 400px;
-    /* padding: 20px; */
-    transition: transform 300ms;
+	/* padding: 20px; */
+	transition: transform 300ms;
 }
 .designs-container .design .cover {
 	border: 1px solid var(--whitemaincolor);
@@ -154,31 +159,37 @@ main {
 	border-radius: 4px;
 	padding: 13px;
 	z-index: 5;
-    border: 3px solid white;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	border: 3px solid white;
+	color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .designs-container .design .details .view a img {
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    transition: transform 100ms;
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+	transition: transform 100ms;
 }
 .designs-container .design .details .view a:hover img {
-    transform: scale(1.3);
+	transform: scale(1.3);
 }
-@media only screen and  (max-width: 500px) {
-    header {
-        padding: 10px;
-    }
-    .designs h2 {
-        font-size: 18px;
-        padding: 10px;
-    }
-    .designs-container {
-        width: 100%;
-        padding: 0 10px;
-    }
+footer {
+    padding: 15px;
+    background-color: var(--maincolor);
+    color: white;
+    text-align: center;
+}
+@media only screen and (max-width: 500px) {
+	header {
+		padding: 10px;
+	}
+	.designs h2 {
+		font-size: 18px;
+		padding: 10px;
+	}
+	.designs-container {
+		width: 100%;
+		padding: 0 10px;
+	}
 }
